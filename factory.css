@@ -1,0 +1,1220 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ==========================================
+   RESET
+========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    direction: rtl;
+
+    font-family:
+        Tahoma,
+        Arial,
+        sans-serif;
+	background-color: #FFFFFF;
+	color: #172a3a;
+}
+
+a{
+	text-decoration: none;
+}
+
+button {
+	font-family: "B Roya";
+}
+
+/*====== HEADER ====*/
+.main-header {
+	position: absolute;
+	
+	top: 0;
+	right: 0;
+	left: 0;
+	
+	width: 100%;
+	height: 75px;
+	z-index: 1000;
+	
+	background-color: rgba(12,29,43,0.88);
+	border-bottom: 1px solid rgba(255,255,255,0.12);
+	backdrop-filter: blur(5px);
+}
+
+
+/* ========================================== HERO CONTAINER ========================================== */
+
+.hero-container {
+
+    width: 90%;
+	max-width: 1250px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+
+/* ========================================== NAVIGATION ========================================== */
+
+.main-nav {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	
+}
+
+.main-nav a::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	height: 2px;
+	background-color: #9aafbd;
+	transition: width 0.3s ease;
+}
+
+.main-nav a:hover {
+	color: #d8e3ea;
+	
+}
+
+.main-nav a:hover::after {
+	width: 100%;
+}
+
+/*لینک فعال*/
+.main-nav a.active {
+	color: #FFFFFF;
+}
+
+.main-nav a.active::after {
+	width: 100%
+}
+
+/* ========================================== HEADER ACTIONS ========================================== */
+
+.header-actions {
+	min-width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.header-icon {
+	width: 22px;
+	height: 22px;
+	padding: 0;
+	border: none;
+	background: transparent;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: opacity 0.3s ease;
+	
+}
+
+.header-icon:hover {
+	opacity: 0.65;
+}
+
+.header-icon svg {
+	width: 19px;
+	height: 19px;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 1.8;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+/* ========================================== FACTORY HERO ========================================== */
+
+.factory-hero {
+	position: relative;
+	width: 100;
+	height: 420px;
+	background-image: url(  "image/prducts.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+/* ========================================== HERO OVERLAY ========================================== */
+
+.hero-overlay {
+	position: absolute;
+	
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	
+	background: linear-gradient(90deg,
+		rgba(13,30,44,0.15) 0%,
+		rgba(13,30,44,0.35) 35%,
+		rgba(13,30,44,0.70) 70%,
+		rgba(13,30,44,0.93) 100%
+	);
+	z-index: 1;
+}
+
+/* ========================================== HERO CONTAINER ========================================== */
+
+.hero-container {
+	position: relative;
+	z-index: 2;
+	width: 90%;
+	max-width: 1250px;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+/* ========================================== HERO CONTENT ========================================== */
+
+.hero-content {
+
+    width: 48%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: right;
+
+    margin-top: 45px;
+}
+
+
+/* ========================================== HERO LINE ========================================== */
+
+.hero-line {
+
+    display: block;
+
+    width: 42px;
+
+    height: 3px;
+
+    margin-bottom: 18px;
+
+    background-color: #9aafbd;
+
+    border-radius: 2px;
+}
+
+
+/* ========================================== HERO TITLE ========================================== */
+
+.hero-content h1 {
+
+    margin: 0 0 12px;
+
+    color: #ffffff;
+    font-family: "B Titr";
+    font-size: 50px;
+
+    font-weight: 700;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================== HERO DESCRIPTION ========================================== */
+
+.hero-content p {
+
+    margin: 0;
+
+    max-width: 500px;
+
+    color: #e1e7eb;
+    font-family: "B Roya";
+    font-size: 20px;
+
+    font-weight: 400;
+
+    line-height: 2;
+}
+
+
+/* ========================================== BREADCRUMB ========================================== */
+
+.breadcrumb {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #dce4e9;
+    font-family:  "B Roya";
+    font-size: 20px;
+}
+
+
+.breadcrumb a {
+
+    color: #ffffff;
+
+    transition:
+        color 0.3s ease;
+}
+
+
+.breadcrumb a:hover {
+
+    color: #9aafbd;
+}
+
+
+.breadcrumb span {
+
+    color: #9aafbd;
+    font-family:  "B Roya";
+    font-size: 18px;
+}
+
+
+.breadcrumb .current {
+
+    color: #c8d2d9;
+}
+
+/* ========================================== tablet ========================================== */
+
+
+@media (max-width: 1000px) {
+
+
+    .main-nav {
+
+        gap: 20px;
+    }
+
+
+    .main-nav a {
+
+        font-size: 11px;
+    }
+
+
+    .logo-area {
+
+        min-width: 170px;
+    }
+
+
+    .header-actions {
+
+        min-width: 80px;
+    }
+
+
+    .hero-content {
+
+        width: 55%;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 42px;
+    }
+
+}
+
+
+/* ========================================== MOBILE ========================================== */
+
+
+@media (max-width: 768px) {
+
+
+    .main-header {
+
+        height: 65px;
+    }
+
+
+    .header-container {
+
+        width: 88%;
+    }
+
+
+    .main-nav {
+
+        display: none;
+    }
+
+
+    .logo-area {
+
+        min-width: auto;
+    }
+
+
+    .logo-area img {
+
+        width: 37px;
+
+        height: 37px;
+    }
+
+
+    .logo-title {
+
+        font-size: 11px;
+    }
+
+
+    .logo-subtitle {
+
+        font-size: 7px;
+    }
+
+
+    .header-actions {
+
+        min-width: auto;
+
+        gap: 14px;
+    }
+
+
+    .header-icon {
+
+        width: 20px;
+
+        height: 20px;
+    }
+
+
+    .header-icon svg {
+
+        width: 17px;
+
+        height: 17px;
+    }
+
+
+    .factory-hero {
+
+        height: 330px;
+    }
+
+
+    .hero-container {
+
+        width: 88%;
+    }
+
+
+    .hero-content {
+
+        width: 75%;
+
+        margin-top: 30px;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 34px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .hero-content p {
+
+        font-size: 13px;
+
+        line-height: 1.9;
+    }
+
+
+    .hero-line {
+
+        width: 32px;
+
+        height: 2px;
+
+        margin-bottom: 12px;
+    }
+
+
+    .breadcrumb {
+
+        right: 0;
+
+        bottom: 18px;
+
+        font-size: 10px;
+    }
+
+}
+
+/* ========================================== SMALL MOBILE ========================================== */
+
+
+@media (max-width: 480px) {
+
+
+    .factory-hero {
+
+        height: 290px;
+    }
+
+
+    .hero-content {
+
+        width: 85%;
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 29px;
+    }
+
+
+    .hero-content p {
+
+        font-size: 11px;
+    }
+
+
+    .logo-subtitle {
+
+        display: none;
+    }
+
+}
+
+
+/* ========================================= Factory Gallery Section ========================================= */
+
+.factory-gallery {
+    padding: 90px 0;
+    background: #f8f9fa;
+}
+
+.gallery-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* عنوان */
+
+.gallery-heading {
+    text-align: right;
+    margin-bottom: 25px;
+}
+
+.gallery-small-title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #8a949c;
+}
+
+.gallery-heading h2 {
+    margin: 0 0 10px;
+    color: #172a3a;
+    font-size: 35px;
+    font-weight: 700;
+	font-family: "B Titr";
+}
+
+.gallery-heading p {
+    margin: 0;
+    color: #777f85;
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+/* فیلترها */
+
+.gallery-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 60px;
+   
+	
+}
+
+.gallery-filter {
+    border: none;
+    background: #f2f4f5;
+    color: #68747d;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+	font-weight: bold;
+}
+
+.gallery-filter:hover {
+    background: #dfe5e9;
+}
+
+.gallery-filter.active {
+    background: #172a3a;
+    color: #ffffff;
+}
+
+
+/* چیدمان تصاویر */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 14px;
+    direction: ltr;
+}
+
+
+/* تصویر اصلی */
+
+.gallery-main-image {
+    height: 390px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-main-image:hover img {
+    transform: scale(1.04);
+}
+
+
+/* چهار تصویر کوچک */
+
+.gallery-small-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.gallery-item {
+    height: 188px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* مشاهده تصاویر بیشتر */
+
+.gallery-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.gallery-more a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 24px;
+    border: 1px solid #172a3a;
+    border-radius: 30px;
+    color: #172a3a;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.gallery-more a span {
+    font-size: 17px;
+}
+
+.gallery-more a:hover {
+    background: #172a3a;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   Gallery Responsive
+========================================= */
+
+@media (max-width: 768px) {
+
+    .factory-gallery {
+        padding: 60px 0;
+    }
+
+    .gallery-heading h2 {
+        font-size: 25px;
+    }
+
+    .gallery-heading p {
+        font-size: 13px;
+    }
+
+    .gallery-filters {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .gallery-filter {
+        flex-shrink: 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-main-image {
+        height: 300px;
+    }
+
+    .gallery-item {
+        height: 150px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .gallery-container {
+        width: 92%;
+    }
+
+    .gallery-main-image {
+        height: 240px;
+    }
+
+    .gallery-small-images {
+        gap: 8px;
+    }
+
+    .gallery-item {
+        height: 115px;
+    }
+
+    .gallery-heading h2 {
+        font-size: 22px;
+    }
+
+}
+
+
+/* ========================================= Equipment & Production Section ======================================== */
+
+.equipment-section {
+    padding: 75px 0;
+    background: #ffffff;
+}
+
+.equipment-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.7fr;
+    align-items: center;
+    gap: 55px;
+
+    direction: ltr;
+}
+
+
+/* متن */
+
+.equipment-content {
+    direction: rtl;
+    text-align: right;
+}
+
+.equipment-label {
+    display: block;
+    margin-bottom: 9px;
+      
+    font-size: 13px;
+    color: #8a949c;
+}
+
+.equipment-content h2 {
+    margin: 0 0 14px;
+    font-family: "B Titr";
+    color: #172a3a;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.equipment-content p {
+    margin: 0;
+    font-family: "B Roya";
+    color: #6f797f;
+    font-size: 18px;
+    line-height: 2.3;
+}
+
+
+/* تصاویر تجهیزات */
+
+.equipment-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+
+    direction: rtl;
+}
+
+.equipment-item {
+    text-align: center;
+}
+
+.equipment-image {
+    width: 100%;
+    height: 145px;
+
+    overflow: hidden;
+    border-radius: 8px;
+
+    background: #f2f4f5;
+}
+
+.equipment-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.45s ease;
+}
+
+.equipment-item:hover .equipment-image img {
+    transform: scale(1.05);
+}
+
+
+/* نام تجهیزات */
+
+.equipment-item h3 {
+    margin: 10px 0 0;
+
+    color: #69747b;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   Equipment Responsive
+========================================= */
+
+@media (max-width: 900px) {
+
+    .equipment-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .equipment-content {
+        text-align: center;
+    }
+
+    .equipment-list {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .equipment-section {
+        padding: 55px 0;
+    }
+
+    .equipment-container {
+        width: 92%;
+    }
+
+    .equipment-content h2 {
+        font-size: 24px;
+    }
+
+    .equipment-content p {
+        font-size: 12px;
+    }
+
+    .equipment-list {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .equipment-image {
+        height: 190px;
+    }
+
+}
+
+/* ========================================= Team Section ========================================= */
+
+.team-section {
+    padding: 70px 0 80px;
+    background: #f8f9fa;
+}
+
+.team-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.25fr 0.85fr;
+    gap: 65px;
+    align-items: center;
+
+    direction: ltr;
+}
+
+
+/* =========================================
+   Team Gallery
+========================================= */
+
+.team-gallery {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 120px 120px;
+    gap: 10px;
+
+    direction: ltr;
+}
+
+.team-image-large {
+    grid-row: 1 / 3;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.team-image-large img,
+.team-image-small img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.45s ease;
+}
+
+.team-image-small {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.team-image-large:hover img,
+.team-image-small:hover img {
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   Team Content
+========================================= */
+
+.team-content {
+    direction: rtl;
+    text-align: right;
+}
+
+.team-label {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #8a949c;
+    font-size: 13px;
+}
+
+.team-content h2 {
+    margin: 0 0 17px;
+    font-family: "B Titr";
+    color: #172a3a;
+    font-size: 27px;
+    line-height: 1.7;
+    font-weight: 700;
+}
+
+.team-content p {
+    margin: 0 0 25px;
+    font-family: "B Roya";
+    color: #707a81;
+    font-size: 18px;
+    line-height: 2.3;
+}
+
+
+/* =========================================
+   Team More Button
+========================================= */
+
+.team-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 9px 20px;
+
+    border: 1px solid #8a949c;
+    border-radius: 25px;
+
+    color: #172a3a;
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.team-more span {
+    font-size: 17px;
+    line-height: 1;
+}
+
+.team-more:hover {
+    background: #172a3a;
+    border-color: #172a3a;
+    color: #ffffff;
+}
+
+
+/* =========================================
+   Team Responsive
+========================================= */
+
+@media (max-width: 900px) {
+
+    .team-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .team-content {
+        text-align: center;
+    }
+
+    .team-more {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .team-section {
+        padding: 55px 0 65px;
+    }
+
+    .team-container {
+        width: 92%;
+    }
+
+    .team-gallery {
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 95px 95px;
+        gap: 8px;
+    }
+
+    .team-content h2 {
+        font-size: 23px;
+    }
+
+    .team-content p {
+        font-size: 12px;
+        line-height: 2.2;
+    }
+
+}
+
+
+/* ========================================= Projects CTA ========================================= */
+
+.projects-cta {
+    position: relative;
+
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-color: #172a3a;
+
+    background-image: url("images/projects-cta.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: auto 100%;
+}
+
+
+/* لایه تیره روی تصویر */
+
+.projects-cta-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        to left,
+        #172a3a 15%,
+        rgba(23, 42, 58, 0.88) 45%,
+        rgba(23, 42, 58, 0.55) 100%
+    );
+}
+
+
+/* محتوای CTA */
+
+.projects-cta-content {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    direction: rtl;
+}
+
+
+.projects-cta-content p {
+    margin: 0 0 14px;
+
+    color: #ffffff;
+    font-family: "B Titr";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* دکمه */
+
+.projects-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 9px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 25px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: 0.3s ease;
+}
+
+
+.projects-cta-button span {
+    font-size: 17px;
+    line-height: 1;
+}
+
+
+.projects-cta-button:hover {
+    background-color: #ffffff;
+    color: #172a3a;
+    border-color: #ffffff;
+}
+
+
+/* =========================================
+   CTA Responsive
+========================================= */
+
+@media (max-width: 600px) {
+
+    .projects-cta {
+        min-height: 160px;
+
+        background-size: cover;
+        background-position: left center;
+    }
+
+    .projects-cta-content {
+        width: 90%;
+    }
+
+    .projects-cta-content p {
+        font-size: 12px;
+    }
+
+}

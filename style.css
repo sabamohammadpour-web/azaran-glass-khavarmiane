@@ -3442,6 +3442,76 @@ a {
 
 }
 
+@media (max-width: 700px) {
+
+    /* Header */
+    .header {
+        height: auto;
+        min-height: 70px;
+    }
+
+    .header .container {
+        width: 92%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 12px 0;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .consultation {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+
+    /* Hero */
+    .hero {
+        height: 600px;
+        background-position: center;
+    }
+
+    .hero-content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+        line-height: 1.6;
+    }
+
+    .hero-description {
+        width: 100%;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
 	
 
 

@@ -3442,74 +3442,83 @@ a {
 
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
-    /* Header */
+    /* ===== HEADER ===== */
+
     .header {
-        height: auto;
-        min-height: 70px;
+        height: auto !important;
     }
 
     .header .container {
-        width: 92%;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        padding: 12px 0;
+        width: 90% !important;
+        height: auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        padding: 15px 0 !important;
     }
 
     .logo img {
-        width: 120px;
+        width: 120px !important;
     }
 
     .nav {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px 16px;
+        width: 100% !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 10px 15px !important;
     }
 
     .nav a {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .consultation {
-        font-size: 13px;
-        padding: 8px 12px;
+        font-size: 13px !important;
+        padding: 8px 14px !important;
     }
 
 
-    /* Hero */
+    /* ===== HERO ===== */
+
     .hero {
-        height: 600px;
-        background-position: center;
+        width: 100% !important;
+        height: 550px !important;
+        display: flex !important;
+        align-items: center !important;
+        background-position: center !important;
     }
 
     .hero-content {
-        width: 90%;
-        text-align: center;
+        width: 90% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        text-align: center !important;
     }
 
     .hero-subtitle {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .hero h1 {
-        font-size: 30px;
-        line-height: 1.6;
+        font-size: 28px !important;
+        line-height: 1.6 !important;
     }
 
     .hero-description {
-        width: 100%;
-        font-size: 16px;
-        line-height: 2;
+        width: 100% !important;
+        font-size: 15px !important;
+        line-height: 2 !important;
     }
 
     .hero-buttons {
-        justify-content: center;
-        flex-wrap: wrap;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
     }
-
 }
 
 	
